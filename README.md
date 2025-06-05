@@ -43,7 +43,7 @@ I wrote a small Python script (`remove_pdf_security.py`) using PyPDF2 to:
 2. Attempt decryption with an empty string (`""`)—which succeeds for owner-locked (permissions) PDFs that have no user password
 3. Re-write each file, without any encryption, into `./processed/` under the original filename
 
-Because I didn’t want to install Python and PyPDF2 on every machine I use (or remember which version I’m on), I bundled the script into a Docker image. This means you can drop your PDFs into a local `data/` folder and run:
+Because I didn’t want to install Python dependencies locally or create a new environment to run the script, I bundled the it into a Docker image. This means you can drop your PDFs into a local `data/` folder and run:
 
 ```bash
 $ docker build -t pdfdecrypter .
