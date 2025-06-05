@@ -1,0 +1,15 @@
+# Ignore input/output folders (you can remove these lines if you want them under version control)
+data/
+processed/
+
+# Bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS metadata
+.DS_Store
+
+# VSCode or editor folders (optional)
+.vscode/
+.idea/
